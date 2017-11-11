@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.yxf.chat.home.customView.CardSlidePanel
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image_slide_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="0dp"
+        card:bottomMarginTop="5dp"
+        card:itemMarginTop="0dp"
+        card:yOffsetStep="5dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/card_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/card_left_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/find_button_delete"
+                />
+
+            <Button
+                android:id="@+id/card_right_btn"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/find_button_love"
+                />
+        </LinearLayout>
+
+        <com.yxf.chat.home.customView.CardItemView
+            android:id="@+id/cardItem_0"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_height"
+            android:visibility="invisible"
+            />
+
+        <com.yxf.chat.home.customView.CardItemView
+            android:id="@+id/cardItem_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_height"
+            android:visibility="invisible"
+            />
+
+        <com.yxf.chat.home.customView.CardItemView
+            android:id="@+id/cardItem_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_height"
+            android:visibility="invisible"
+            />
+
+        <com.yxf.chat.home.customView.CardItemView
+            android:id="@+id/cardItem_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_height"
+            android:visibility="invisible"
+            />
+
+    </com.yxf.chat.home.customView.CardSlidePanel>
+</RelativeLayout>

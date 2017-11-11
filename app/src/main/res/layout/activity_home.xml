@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <!--标题栏-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/title_toolbar"
+        >
+
+        <ImageView
+            android:id="@+id/title_left_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:clickable="true"
+            android:background="@drawable/common_button_background"
+            android:padding="5dp"
+            android:src="@drawable/title_left_menu"
+            />
+
+        <TextView
+            android:id="@+id/title_name"
+            style="@style/title_text"
+            android:text="@string/app_name"
+            />
+
+        <ImageView
+            android:id="@+id/title_right_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:background="@drawable/common_button_background"
+            android:padding="5dp"
+            android:src="@drawable/title_right_menu"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <!--用来展示fragment-->
+    <FrameLayout
+        android:id="@+id/fl_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="72dp"
+        />
+</RelativeLayout>

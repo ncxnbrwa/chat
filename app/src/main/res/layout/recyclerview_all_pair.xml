@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:paddingBottom="12dp"
+    android:paddingLeft="6dp"
+    android:paddingTop="10dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/all_pair_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/all_pair_icon"
+        />
+
+    <TextView
+        android:id="@+id/all_pair_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/all_pair_icon"
+        android:text="500块钱"
+        android:textColor="@android:color/white"
+        />
+
+    <TextView
+        android:id="@+id/all_pair_dec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/all_pair_name"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/all_pair_icon"
+        android:text="配对于2小时前"
+        android:textColor="#8a8a8a"
+        android:textSize="12sp"
+        />
+
+</RelativeLayout>

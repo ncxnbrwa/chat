@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="shadow_width">0dp</dimen>
+    <dimen name="sliding_menu_offset">60dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="drag_square_interval" >2dp</dimen>
+    <dimen name="main_interval_v1">5dp</dimen>
+    <dimen name="main_interval_v2">10dp</dimen>
+    <dimen name="main_interval_v3">15dp</dimen>
+
+    <dimen name="divider_height">0.01dp</dimen>
+    <dimen name="item_height">36dp</dimen>
+
+    <dimen name="common_padding">8dp</dimen>
+    <dimen name="common_margin">8dp</dimen>
+    <dimen name="layout_margin">12dp</dimen>
+    <dimen name="bottom_margin">20dp</dimen>
+    <dimen name="layout_padding">12dp</dimen>
+    <dimen name="setting_padding">20dp</dimen>
+    <dimen name="setting_margin">20dp</dimen>
+
+    <dimen name="title_font">18sp</dimen>
+    <dimen name="big_font">16sp</dimen>
+    <dimen name="middle_font">14sp</dimen>
+    <dimen name="small_font">12sp</dimen>
+    <dimen name="hint_top_font">10sp</dimen>
+
+    <!--卡片高度-->
+    <dimen name="card_height">460dp</dimen>
+    <dimen name="card_src">1dp</dimen>
+    <!--友情链接-->
+    <dimen name="link_title">24sp</dimen>
+</resources>

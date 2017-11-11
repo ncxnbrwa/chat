@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:paddingTop="25dp"
+    >
+
+    <!--用户头像布局-->
+    <LinearLayout
+        android:id="@+id/ll_user_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="30dp"
+        >
+
+        <!--用户头像-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_user_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/wuyanzu"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp"
+            />
+
+        <!--用户名称-->
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="吴彦祖"
+            android:textColor="@color/write_font_color"
+            android:textSize="16sp"
+            />
+
+        <!--用户操作文字-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="点击查看/编辑"
+            android:textColor="@color/gray_font"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_find"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/left_icon_0"
+                style="@style/left_menu_imageView"
+                android:padding="2dp"
+                android:src="@drawable/menu_find"
+                />
+
+            <TextView
+                android:id="@+id/left_title_0"
+                style="@style/left_menu_textView"
+                android:text="五十里"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_msg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/left_icon_1"
+                style="@style/left_menu_imageView"
+                android:src="@drawable/menu_setting"
+                />
+
+            <TextView
+                android:id="@+id/left_title_1"
+                style="@style/left_menu_textView"
+                android:text="设置"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_setting"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/left_icon_2"
+                style="@style/left_menu_imageView"
+                android:padding="3dp"
+                android:src="@drawable/mall"
+                />
+
+            <TextView
+                android:id="@+id/left_title_2"
+                style="@style/left_menu_textView"
+                android:text="含生草 (个人商城)"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_friendUrl"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/left_icon_3"
+                style="@style/left_menu_imageView"
+                android:padding="5dp"
+                android:src="@drawable/menu_share"
+                />
+
+            <TextView
+                android:id="@+id/left_title_3"
+                style="@style/left_menu_textView"
+                android:text="友情链接"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_share"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/left_icon_share"
+                style="@style/left_menu_imageView"
+                android:padding="5dp"
+                android:src="@drawable/menu_share"
+                />
+
+            <TextView
+                android:id="@+id/left_title_share"
+                style="@style/left_menu_textView"
+                android:text="推荐给好友"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

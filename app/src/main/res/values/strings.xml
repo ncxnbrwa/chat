@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">五十里</string>
+
+    <string name="ok">好的</string>
+    <string name="sex_man">♂</string>
+    <string name="sex_woman">♀</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D34530</color>
+    <color name="colorPrimaryDark">#A93726</color>
+    <color name="colorAccent">#9E9E9E</color>
+    <color name="primary_text_color">#212121</color>
+    <color name="secondary_text_color">#757575</color>
+
+    <color name="write_font_color">#fff</color>
+    <color name="change_font">#CB4335</color>
+    <color name="gray_font">#cccccc</color>
+    <color name="text_c1">#555555</color>
+    <color name="indicator_line">#C0331E</color>
+    <color name="pressed_red">#d34530</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#999999</color>
+    <color name="dan_gray">#606463</color>
+    <color name="blue">#2c90c4</color>
+    <color name="red">#ff0000</color>
+    <color name="orange">#FF6600</color>
+    <color name="header_bg">#fe6f07</color>
+    <color name="dim_gray">#8a8a8a</color>
+    <color name="light_green">#90EE90</color>
+    <color name="setting_color">#D44834</color>
+    <!--标签背景色-->
+    <color name="label_back">#8F9EB0</color>
+    <!--标签字体颜色-->
+    <color name="label_text_color">#536780</color>
+    <!--分割线的颜色-->
+    <color name="separate_view_color">#BDBDBD</color>
+
+</resources>

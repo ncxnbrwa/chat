@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_setting_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_info_title"
+            style="@style/user_info_title"
+            android:layout_marginLeft="@dimen/setting_margin"
+            android:text="向我显示"
+            />
+
+        <!--显示性别项-->
+        <LinearLayout
+            android:id="@+id/ll_setting_sex"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/setting_margin"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="显示性别"
+                android:textColor="@color/primary_text_color"
+                />
+
+            <TextView
+                android:id="@+id/tv_sex_choose"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/setting_margin"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/setting_color"
+                tools:text="女生"
+                />
+        </LinearLayout>
+
+        <!--范围项-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/setting_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="范围"
+                android:textColor="@color/primary_text_color"
+                />
+
+            <TextView
+                android:id="@+id/tv_setting_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/setting_margin"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/setting_color"
+                tools:text="55km"
+                />
+        </LinearLayout>
+
+        <!--范围SeekBar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginLeft="@dimen/setting_margin"
+            android:layout_marginRight="@dimen/setting_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_bike"
+                />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/setting_distance_seekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:max="100"
+                android:progressBackgroundTint="@color/separate_view_color"
+                android:progressTint="@color/colorPrimary"
+                android:thumbTint="@color/colorPrimary"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_airplane"
+                />
+
+        </LinearLayout>
+
+        <!--年龄项-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginRight="@dimen/setting_margin"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/setting_age_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setting_margin"
+                android:gravity="center_vertical"
+                android:text="年龄"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/setting_age_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/setting_color"
+                tools:text="18"
+                />
+
+            <TextView
+                android:id="@+id/setting_age_cen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/setting_age_end"
+                android:gravity="center_vertical"
+                android:text=" - "
+                android:textColor="@color/setting_color"
+                />
+
+            <TextView
+                android:id="@+id/setting_age_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/setting_age_cen"
+                android:gravity="center_vertical"
+                android:textColor="@color/setting_color"
+                tools:text="16"
+                />
+        </RelativeLayout>
+
+        <!--年龄SeekBar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginLeft="@dimen/setting_margin"
+            android:layout_marginRight="@dimen/setting_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_student"
+                />
+
+            <com.dalong.rangeseekbar.RangeBar
+                android:id="@+id/setting_age_seekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                app:connectingLineColor="@color/colorPrimary"
+                app:thumbColorNormal="@color/colorPrimary"
+                app:thumbColorPressed="@color/colorPrimary"
+                app:thumbRadius="3dp"
+                app:tickCount="33"
+                app:tickHeight="0dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_sofa"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/separate_view_color"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_setting_set"
+                style="@style/user_info_title"
+                android:layout_marginLeft="@dimen/setting_margin"
+                android:text="我的信息"
+                />
+
+            <!--清除缓存项-->
+            <LinearLayout
+                android:id="@+id/setting_data_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                >
+
+                <ImageView
+                    android:id="@+id/setting_data_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icon_cache"
+                    />
+
+                <TextView
+                    style="@style/setting_text"
+                    android:text="清除本地缓存"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icon_right_arrow"
+                    />
+            </LinearLayout>
+
+            <!--修改手机项-->
+            <LinearLayout
+                android:id="@+id/setting_phone_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icon_phone"
+                    />
+
+                <TextView
+                    style="@style/setting_text"
+                    android:text="修改手机号"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icon_right_arrow"
+                    />
+            </LinearLayout>
+
+            <!--修改密码项-->
+            <LinearLayout
+                android:id="@+id/setting_password_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                >
+
+                <ImageView
+                    android:id="@+id/setting_safety_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icon_password"
+                    />
+
+                <TextView
+                    style="@style/setting_text"
+                    android:text="修改密码"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icon_right_arrow"
+                    />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/setting_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/separate_view_color"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/common_button_background"
+            android:gravity="center"
+            android:text="退出登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/middle_font"
+            />
+
+        <TextView
+            android:id="@+id/tv_app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:text="五十里 1.0.0"
+            android:textColor="@color/dim_gray"
+            />
+    </LinearLayout>
+
+</ScrollView>

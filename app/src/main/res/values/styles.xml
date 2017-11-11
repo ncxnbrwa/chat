@@ -1,0 +1,177 @@
+<resources xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowAnimationStyle">@style/activity_animation</item>
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+
+    </style>
+
+    <!--引导页面样式-->
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <!--Activity切换动画-->
+    <style name="activity_animation">
+        <!--<item name="android:activityOpenEnterAnimation">@anim/activity_open_enter</item>-->
+        <!--<item name="android:activityOpenExitAnimation">@anim/activity_open_exit</item>-->
+        <!--<item name="android:activityCloseEnterAnimation">@anim/activity_close_enter</item>-->
+        <!--<item name="android:activityCloseExitAnimation">@anim/activity_close_exit</item>-->
+        <item name="android:activityOpenEnterAnimation">@anim/open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/open_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/open_exit</item>
+    </style>
+
+    <!--左侧滑菜单图标样式-->
+    <style name="left_menu_imageView">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <!--左侧滑菜单文字样式-->
+    <style name="left_menu_textView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--个人信息的标题-->
+    <style name="user_info_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginLeft">@dimen/layout_margin</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/small_font</item>
+        <item name="android:textColor">@color/setting_color</item>
+    </style>
+
+    <!--个人信息item文字-->
+    <style name="setting_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="android:textSize">@dimen/middle_font</item>
+    </style>
+
+    <!--通用按钮样式-->
+    <style name="common_button">
+        <item name="android:textSize">@dimen/big_font</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/common_button_background</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <!--标题文字样式-->
+    <style name="title_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/title_font</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--标题返回键样式-->
+    <style name="title_back_icon">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/common_button_background</item>
+        <item name="android:src">@drawable/user_back</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <!--主页标题Toolbar样式-->
+    <style name="title_toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">73dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:paddingTop">25dp</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:elevation">6dp</item>
+    </style>
+
+    <style name="title_toolbar.other" parent="title_toolbar">
+
+    </style>
+
+    <!--输入错误提示文字样式-->
+    <style name="edit_error" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/small_font</item>
+    </style>
+
+    <!--输入文字数目样式-->
+    <style name="edit_counter" parent="Theme.AppCompat">
+        <item name="android:textSize">@dimen/small_font</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <!--输入框提示-->
+    <style name="edit_hint" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/hint_top_font</item>
+    </style>
+
+    <!--编辑个人信息页面的标题文字样式-->
+    <style name="edit_info_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/middle_font</item>
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+
+    <!--编辑个人信息页面的内容文字样式-->
+    <style name="edit_info_msg">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/small_font</item>
+        <item name="android:textColor">@color/secondary_text_color</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <!--日期选择器的样式-->
+    <style name="DatePicker_style" parent="Material.App.Dialog.Light">
+        <item name="dp_yearTextSize">@dimen/abc_text_size_title_material</item>
+        <item name="dp_yearItemHeight">48dp</item>
+        <item name="dp_textColor">@color/abc_primary_text_material_light</item>
+        <item name="dp_textHighlightColor">#FFFFFFFF</item>
+        <item name="dp_selectionColor">?attr/colorPrimary</item>
+        <item name="dp_animDuration">@android:integer/config_mediumAnimTime</item>
+        <item name="dp_inInterpolator">@android:anim/decelerate_interpolator</item>
+        <item name="dp_outInterpolator">@android:anim/decelerate_interpolator</item>
+        <item name="dp_textStyle">normal</item>
+        <item name="dp_dayTextSize">@dimen/abc_text_size_caption_material</item>
+        <item name="dp_textLabelColor">@color/abc_secondary_text_material_light</item>
+        <item name="dp_textDisableColor">@color/abc_secondary_text_material_light</item>
+        <item name="dp_headerPrimaryHeight">144dp</item>
+        <item name="dp_headerSecondaryHeight">32dp</item>
+        <item name="dp_headerPrimaryColor">?attr/colorPrimary</item>
+        <item name="dp_headerSecondaryColor">?attr/colorPrimaryDark</item>
+        <item name="dp_headerPrimaryTextSize">@dimen/abc_text_size_display_2_material</item>
+        <item name="dp_headerSecondaryTextSize">@dimen/abc_text_size_headline_material</item>
+        <item name="dp_textHeaderColor">#90FFFFFF</item>
+    </style>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        style="@style/title_toolbar.other"
+        >
+
+        <ImageView
+            android:id="@+id/edit_basic_info_back"
+            style="@style/title_back_icon"
+            />
+
+        <TextView
+            style="@style/title_text"
+            android:text="个人信息"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/ll_edit_sex"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            style="@style/edit_info_title"
+            android:text="性别"
+            />
+
+        <TextView
+            android:id="@+id/tv_info_sex"
+            style="@style/edit_info_msg"
+            android:text="男"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            style="@style/edit_info_title"
+            android:text="姓名"
+            />
+
+        <TextView
+            android:id="@+id/tv_info_name"
+            style="@style/edit_info_msg"
+            android:text="赖Sir"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_edit_birth"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            style="@style/edit_info_title"
+            android:text="生日"
+            />
+
+        <TextView
+            android:id="@+id/tv_info_time"
+            style="@style/edit_info_msg"
+            android:text="1996/04/30"
+            />
+    </LinearLayout>
+
+</LinearLayout>

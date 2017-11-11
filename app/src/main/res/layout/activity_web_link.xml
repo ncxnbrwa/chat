@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yxf.chat.leftMenuItem.WebLinkActivity"
+    >
+
+    <android.support.v7.widget.Toolbar
+        style="@style/title_toolbar.other"
+        >
+
+        <ImageView
+            android:id="@+id/web_back"
+            style="@style/title_back_icon"
+            />
+
+        <TextView
+            android:id="@+id/web_title_text"
+            style="@style/title_text"
+            tools:text="友情链接"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

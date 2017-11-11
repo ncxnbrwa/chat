@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yxf.chat.userPair.ConversationActivity"
+    >
+
+
+    <android.support.v7.widget.Toolbar
+        style="@style/title_toolbar.other"
+        >
+
+        <ImageView
+            android:id="@+id/conversation_back"
+            style="@style/title_back_icon"
+            />
+
+        <TextView
+            android:id="@+id/conversation_title"
+            style="@style/title_text"
+            tools:text="聊天名称"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <fragment
+        android:id="@+id/conversation_frag"
+        android:name="io.rong.imkit.fragment.ConversationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

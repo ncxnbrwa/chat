@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--单个卡片布局测试-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        >
+
+        <com.yxf.chat.home.customView.AutoScaleRelativeLayout
+            android:id="@+id/card_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            card:layout_collapseMode="parallax"
+            card:widthHeightRate="1"
+            >
+
+            <com.yxf.chat.home.customView.Banner
+                android:id="@+id/card_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card:image_scale_type="center_crop"
+                />
+
+            <TextView
+                android:id="@+id/card_pic_num"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/photo_num_bg"
+                android:drawableLeft="@drawable/card_photo"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="6"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small_font"
+                />
+        </com.yxf.chat.home.customView.AutoScaleRelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            >
+
+            <!--基本信息项-->
+            <RelativeLayout
+                android:id="@+id/card_bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/bottom"
+                android:paddingLeft="12dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="吴彦祖"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/big_font"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_user_age_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_user_name"
+                    android:background="@drawable/shape_age"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="♀ 18"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small_font"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_user_constellation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_user_name"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/tv_user_age_sex"
+                    android:background="@drawable/shape_constellation"
+                    android:text="摩羯座"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/small_font"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_user_profession"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_user_age_sex"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="职业"
+                    android:textColor="@color/secondary_text_color"
+                    android:textSize="@dimen/small_font"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/need_hide_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/separate_view_color"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:layout_marginTop="10dp"
+                    android:text="个人签名"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/middle_font"
+                    />
+
+                <!--签名项-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:layout_marginRight="@dimen/layout_margin"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/icon_sign"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_user_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:text="我不是胖,我是可爱"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="@dimen/big_font"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/separate_view_color"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:layout_marginTop="10dp"
+                    android:text="我的信息"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/middle_font"
+                    />
+
+                <!--职业项-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:layout_marginRight="@dimen/layout_margin"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/icon_profession"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_user_profession_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:text="模特"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="@dimen/big_font"
+                        />
+                </LinearLayout>
+
+                <!--公司项-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:layout_marginRight="@dimen/layout_margin"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/icon_company"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:text="玉熙坊公司"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="@dimen/big_font"
+                        />
+                </LinearLayout>
+
+                <!--家乡项-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:layout_marginRight="@dimen/layout_margin"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/icon_home"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_user_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:text="湖南"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="@dimen/big_font"
+                        />
+                </LinearLayout>
+
+                <!--现居地项-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:layout_marginRight="@dimen/layout_margin"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/icon_address"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:text="广州"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="@dimen/big_font"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/separate_view_color"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:layout_marginTop="10dp"
+                    android:text="我的标签"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/middle_font"
+                    />
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/label_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingBottom="@dimen/layout_padding"
+                    android:paddingLeft="@dimen/layout_padding"
+                    android:paddingTop="@dimen/layout_padding"
+                    app:alignContent="center"
+                    app:alignItems="flex_start"
+                    app:flexDirection="row"
+                    app:flexWrap="wrap"
+                    app:justifyContent="flex_start"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/separate_view_color"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

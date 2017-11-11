@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_man"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="selectMan"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_sex_man"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="男生"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_sex_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_woman"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_sex_woman"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="女生"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_sex_women"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dialog_unlimited"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_sex_all"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="不限"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_sex_unlimited"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            />
+    </LinearLayout>
+
+</LinearLayout>

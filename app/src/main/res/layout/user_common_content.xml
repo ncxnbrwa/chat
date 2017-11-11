@@ -1,0 +1,269 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/user_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:paddingBottom="@dimen/layout_padding"
+        android:paddingLeft="@dimen/layout_margin"
+        >
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="10dp"
+            android:text="吴彦祖"
+            android:textColor="@color/primary_text_color"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_user_age_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user_name"
+            android:background="@drawable/shape_age"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="♀ 18"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_constellation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_user_age_sex"
+            android:background="@drawable/shape_constellation"
+            android:text="摩羯座"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_edit_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user_age_sex"
+            android:layout_marginTop="5dp"
+            android:text="点击编辑个人信息 (如姓名、年龄、性别)"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="12sp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/layout_margin"
+            android:src="@drawable/icon_right_arrow"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separate_view_color"
+        />
+
+    <TextView
+        style="@style/user_info_title"
+        android:text="个人签名"
+        />
+
+    <!--个人签名-->
+    <LinearLayout
+        android:id="@+id/ll_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/layout_padding"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingTop="@dimen/layout_padding"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_sign"
+            />
+
+        <TextView
+            android:id="@+id/tv_user_sign"
+            style="@style/setting_text"
+            android:text="我就是我"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separate_view_color"
+        />
+
+    <TextView
+        style="@style/user_info_title"
+        android:text="我的信息"
+        />
+
+    <!--职业-->
+    <LinearLayout
+        android:id="@+id/ll_profession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/layout_padding"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingTop="@dimen/layout_padding"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_student"
+            />
+
+        <TextView
+            android:id="@+id/user_profession_details"
+            style="@style/setting_text"
+            android:text="网页设计师"
+            />
+    </LinearLayout>
+
+    <!--公司-->
+    <LinearLayout
+        android:id="@+id/ll_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/layout_padding"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingTop="@dimen/layout_padding"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_company"
+            />
+
+        <TextView
+            android:id="@+id/user_company"
+            style="@style/setting_text"
+            android:text="玉熙坊科技"
+            />
+    </LinearLayout>
+
+    <!--来自省份-->
+    <LinearLayout
+        android:id="@+id/ll_province"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/layout_padding"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingTop="@dimen/layout_padding"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_home"
+            />
+
+        <TextView
+            android:id="@+id/user_province"
+            style="@style/setting_text"
+            android:text="湖南"
+            />
+    </LinearLayout>
+
+    <!--所在地-->
+    <LinearLayout
+        android:id="@+id/ll_local"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/layout_padding"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingTop="@dimen/layout_padding"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_address"
+            />
+
+        <TextView
+            android:id="@+id/user_local"
+            style="@style/setting_text"
+            android:text="广州"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separate_view_color"
+        />
+
+    <TextView
+        android:id="@+id/tv_tab_title"
+        style="@style/user_info_title"
+        android:text="我的标签"
+        />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/label_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:paddingBottom="@dimen/layout_padding"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingTop="@dimen/layout_padding"
+        app:alignContent="center"
+        app:alignItems="flex_start"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        app:justifyContent="flex_start"
+        >
+
+        <TextView
+            android:id="@+id/label_null_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ 添加我的标签"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="@dimen/middle_font"
+            />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/separate_view_color"
+        />
+
+</LinearLayout>

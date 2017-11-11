@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/change_phone_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yxf.chat.user.security.ChangePhoneActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.Toolbar
+            style="@style/title_toolbar.other"
+            >
+
+            <ImageView
+                android:id="@+id/change_phone_back"
+                style="@style/title_back_icon"
+                />
+
+            <TextView
+                style="@style/title_text"
+                android:text="修改电话号码"
+                />
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/new_phone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:paddingLeft="@dimen/layout_padding"
+            android:paddingRight="@dimen/layout_padding"
+            app:hintTextAppearance="@style/edit_hint"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_new_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入手机号码"
+                android:inputType="number"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/new_phone_verify_code_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/layout_padding"
+                android:paddingRight="@dimen/layout_padding"
+                app:counterEnabled="true"
+                app:counterMaxLength="4"
+                app:counterTextAppearance="@style/edit_counter"
+                app:hintTextAppearance="@style/edit_hint"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_new_phone_verify_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入验证码"
+                    android:inputType="number"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.yxf.chat.utils.TimeButton
+                android:id="@+id/btn_verify_code"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/common_button_background"
+                android:text="验证码"
+                android:textColor="@color/white"
+                android:textSize="@dimen/middle_font"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_change_phone_commit"
+        style="@style/common_button"
+        android:text="提交"
+        />
+</RelativeLayout>
